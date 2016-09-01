@@ -1,0 +1,10 @@
+application: uniform-shop
+module: api-service
+runtime: go
+api_version: go1
+version: 0
+
+handlers:
+- url: /.*
+  script: hello/_go_app
+  secure: always

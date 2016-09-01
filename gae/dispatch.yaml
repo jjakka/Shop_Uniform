@@ -1,0 +1,12 @@
+application: uniform-shop
+
+dispatch:
+
+  - url: "uniform.is/*"
+    module: redirect
+
+  - url: "*/api/*"
+    module: api-service
+
+  - url: "*/*"
+    module: default

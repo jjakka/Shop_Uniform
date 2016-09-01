@@ -1,0 +1,9 @@
+application: uniform-shop
+module: redirect
+runtime: go
+api_version: go1
+version: 0
+
+handlers:
+- url: /.*
+  script: _go_app
